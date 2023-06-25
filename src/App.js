@@ -1,16 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./reset.css";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <div className="background">
-        <img src="/background-sp.png" />
+      <div className="logo">
+        <img src="logo.png" alt="" />
       </div>
-      <div className="logo">らぶぱも</div>
-      <div className="pawmi-pictures">
-        <img src="pawmo-front.png" />
+      <div className="main">
+        <img className="pawmi-picture" src="pawmo-front.png" alt="" />
       </div>
+      <footer>
+        <p>@2023 canymoff</p>
+      </footer>
     </div>
   );
 }
