@@ -5,11 +5,11 @@ import React, { useState } from "react";
 // 画像を配列に入れる
 const imageArray = [
   "pawmo-front.png",
-  "pawmo-above.png",
   "pawmo-right.png",
-  "pawmo-left.png",
-  "pawmo-below.png",
   "pawmo-back.png",
+  "pawmo-left.png",
+  "pawmo-above.png",
+  "pawmo-below.png",
 ];
 
 function App() {
@@ -19,27 +19,10 @@ function App() {
       case 0:
         return (
           <div className="buttons">
-            <button className="button-up" onClick={() => setCurrentIndex(1)}>
+            <button className="button-up" onClick={() => setCurrentIndex(4)}>
               ↑
             </button>
-            <button className="button-right" onClick={() => setCurrentIndex(2)}>
-              →
-            </button>
-            <button className="button-down" onClick={() => setCurrentIndex(4)}>
-              ↓
-            </button>
-            <button className="button-left" onClick={() => setCurrentIndex(3)}>
-              ←
-            </button>
-          </div>
-        );
-      case 1:
-        return (
-          <div className="buttons">
-            <button className="button-up" onClick={() => setCurrentIndex(0)}>
-              ↑
-            </button>
-            <button className="button-right" onClick={() => setCurrentIndex(2)}>
+            <button className="button-right" onClick={() => setCurrentIndex(1)}>
               →
             </button>
             <button className="button-down" onClick={() => setCurrentIndex(5)}>
@@ -50,19 +33,36 @@ function App() {
             </button>
           </div>
         );
-      case 2:
+      case 1:
         return (
           <div className="buttons">
-            <button className="button-up" onClick={() => setCurrentIndex(1)}>
+            <button className="button-up" onClick={() => setCurrentIndex(4)}>
               ↑
             </button>
             <button className="button-right" onClick={() => setCurrentIndex(0)}>
               →
             </button>
-            <button className="button-down" onClick={() => setCurrentIndex(4)}>
+            <button className="button-down" onClick={() => setCurrentIndex(5)}>
               ↓
             </button>
-            <button className="button-left" onClick={() => setCurrentIndex(5)}>
+            <button className="button-left" onClick={() => setCurrentIndex(2)}>
+              ←
+            </button>
+          </div>
+        );
+      case 2:
+        return (
+          <div className="buttons">
+            <button className="button-up" onClick={() => setCurrentIndex(4)}>
+              ↑
+            </button>
+            <button className="button-right" onClick={() => setCurrentIndex(1)}>
+              →
+            </button>
+            <button className="button-down" onClick={() => setCurrentIndex(5)}>
+              ↓
+            </button>
+            <button className="button-left" onClick={() => setCurrentIndex(3)}>
               ←
             </button>
           </div>
@@ -70,13 +70,13 @@ function App() {
       case 3:
         return (
           <div className="buttons">
-            <button className="button-up" onClick={() => setCurrentIndex(1)}>
+            <button className="button-up" onClick={() => setCurrentIndex(4)}>
               ↑
             </button>
-            <button className="button-right" onClick={() => setCurrentIndex(5)}>
+            <button className="button-right" onClick={() => setCurrentIndex(2)}>
               →
             </button>
-            <button className="button-down" onClick={() => setCurrentIndex(4)}>
+            <button className="button-down" onClick={() => setCurrentIndex(5)}>
               ↓
             </button>
             <button className="button-left" onClick={() => setCurrentIndex(0)}>
@@ -90,10 +90,10 @@ function App() {
             <button className="button-up" onClick={() => setCurrentIndex(0)}>
               ↑
             </button>
-            <button className="button-right" onClick={() => setCurrentIndex(2)}>
+            <button className="button-right" onClick={() => setCurrentIndex(1)}>
               →
             </button>
-            <button className="button-down" onClick={() => setCurrentIndex(5)}>
+            <button className="button-down" onClick={() => setCurrentIndex(2)}>
               ↓
             </button>
             <button className="button-left" onClick={() => setCurrentIndex(3)}>
@@ -104,13 +104,13 @@ function App() {
       case 5:
         return (
           <div className="buttons">
-            <button className="button-up" onClick={() => setCurrentIndex(1)}>
+            <button className="button-up" onClick={() => setCurrentIndex(0)}>
               ↑
             </button>
-            <button className="button-right" onClick={() => setCurrentIndex(2)}>
+            <button className="button-right" onClick={() => setCurrentIndex(1)}>
               →
             </button>
-            <button className="button-down" onClick={() => setCurrentIndex(4)}>
+            <button className="button-down" onClick={() => setCurrentIndex(2)}>
               ↓
             </button>
             <button className="button-left" onClick={() => setCurrentIndex(3)}>
