@@ -7,11 +7,24 @@
   background-blend-mode: overlay;
   background-size: cover;
   position: relative;
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    height: 100%;
+  }
+  @media all and (min-width: 1025px) {
+    background-image: url("../public/background-pc.png");
+    background-size: cover;
+  }
 }
-
 .logo {
+  position: absolute;
   width: 15vh;
   padding: 10px;
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    width: 25%;
+  }
+  @media all and (min-width: 1025px) {
+    width: 15%;
+  }
 }
 
 .main {
@@ -24,6 +37,11 @@
   position: absolute;
   top: 30%;
   width: 80%;
+  @media all and (min-width: 1025px) {
+    top: 8%;
+    width: auto;
+    height: 80%;
+  }
 }
 
 button {
@@ -33,13 +51,25 @@ button {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 60px;
+  }
+  @media all and (min-width: 1025px) {
+    font-size: 80px;
+  }
 }
 
 .buttons {
+  margin-top: 160px;
   display: grid;
-  grid-template-columns: 50vw 30vw 50vw;
+  grid-template-columns: 40vw 40vw 40vw;
   grid-template-rows: 30vw 80vw 30vw;
   z-index: 10;
+  @media all and (min-width: 1025px) {
+    margin-top: 100px;
+    grid-template-columns: 650px 400px 650px;
+    grid-template-rows: 150px 450px 150px;
+  }
 
   .button-position-top {
     grid-row: 1/2;
