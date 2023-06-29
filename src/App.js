@@ -22,27 +22,19 @@ function App() {
             <button
               className="button-position-top"
               onClick={() => setCurrentIndex(4)}
-            >
-              ↑
-            </button>
+            ></button>
             <button
               className="button-position-right"
               onClick={() => setCurrentIndex(1)}
-            >
-              →
-            </button>
+            ></button>
             <button
               className="button-position-bottom"
               onClick={() => setCurrentIndex(5)}
-            >
-              ↓
-            </button>
+            ></button>
             <button
               className="button-position-left"
               onClick={() => setCurrentIndex(3)}
-            >
-              ←
-            </button>
+            ></button>
           </div>
         );
       case 1:
@@ -51,27 +43,19 @@ function App() {
             <button
               className="button-position-top"
               onClick={() => setCurrentIndex(4)}
-            >
-              ↑
-            </button>
+            ></button>
             <button
               className="button-position-right"
               onClick={() => setCurrentIndex(0)}
-            >
-              →
-            </button>
+            ></button>
             <button
               className="button-position-bottom"
               onClick={() => setCurrentIndex(5)}
-            >
-              ↓
-            </button>
+            ></button>
             <button
               className="button-position-left"
               onClick={() => setCurrentIndex(2)}
-            >
-              ←
-            </button>
+            ></button>
           </div>
         );
       case 2:
@@ -80,27 +64,19 @@ function App() {
             <button
               className="button-position-top"
               onClick={() => setCurrentIndex(4)}
-            >
-              ↑
-            </button>
+            ></button>
             <button
               className="button-position-right"
               onClick={() => setCurrentIndex(1)}
-            >
-              →
-            </button>
+            ></button>
             <button
               className="button-position-bottom"
               onClick={() => setCurrentIndex(5)}
-            >
-              ↓
-            </button>
+            ></button>
             <button
               className="button-position-left"
               onClick={() => setCurrentIndex(3)}
-            >
-              ←
-            </button>
+            ></button>
           </div>
         );
       case 3:
@@ -109,27 +85,19 @@ function App() {
             <button
               className="button-position-top"
               onClick={() => setCurrentIndex(4)}
-            >
-              ↑
-            </button>
+            ></button>
             <button
               className="button-position-right"
               onClick={() => setCurrentIndex(2)}
-            >
-              →
-            </button>
+            ></button>
             <button
               className="button-position-bottom"
               onClick={() => setCurrentIndex(5)}
-            >
-              ↓
-            </button>
+            ></button>
             <button
               className="button-position-left"
               onClick={() => setCurrentIndex(0)}
-            >
-              ←
-            </button>
+            ></button>
           </div>
         );
       case 4:
@@ -138,27 +106,19 @@ function App() {
             <button
               className="button-position-top"
               onClick={() => setCurrentIndex(0)}
-            >
-              ↑
-            </button>
+            ></button>
             <button
               className="button-position-right"
               onClick={() => setCurrentIndex(1)}
-            >
-              →
-            </button>
+            ></button>
             <button
               className="button-position-bottom"
               onClick={() => setCurrentIndex(2)}
-            >
-              ↓
-            </button>
+            ></button>
             <button
               className="button-position-left"
               onClick={() => setCurrentIndex(3)}
-            >
-              ←
-            </button>
+            ></button>
           </div>
         );
       case 5:
@@ -167,27 +127,19 @@ function App() {
             <button
               className="button-position-top"
               onClick={() => setCurrentIndex(0)}
-            >
-              ↑
-            </button>
+            ></button>
             <button
               className="button-position-right"
               onClick={() => setCurrentIndex(1)}
-            >
-              →
-            </button>
+            ></button>
             <button
               className="button-position-bottom"
               onClick={() => setCurrentIndex(2)}
-            >
-              ↓
-            </button>
+            ></button>
             <button
               className="button-position-left"
               onClick={() => setCurrentIndex(3)}
-            >
-              ←
-            </button>
+            ></button>
           </div>
         );
       default:
