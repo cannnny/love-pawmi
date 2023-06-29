@@ -21,7 +21,7 @@ function App() {
           <div className="buttons">
             <button
               className="button-position-top"
-              onClick={() => setCurrentIndex(4)}
+              onClick={() => setCurrentIndex(5)}
             ></button>
             <button
               className="button-position-right"
@@ -29,7 +29,7 @@ function App() {
             ></button>
             <button
               className="button-position-bottom"
-              onClick={() => setCurrentIndex(5)}
+              onClick={() => setCurrentIndex(4)}
             ></button>
             <button
               className="button-position-left"
@@ -42,19 +42,19 @@ function App() {
           <div className="buttons">
             <button
               className="button-position-top"
-              onClick={() => setCurrentIndex(4)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(0)}
-            ></button>
-            <button
-              className="button-position-bottom"
               onClick={() => setCurrentIndex(5)}
             ></button>
             <button
-              className="button-position-left"
+              className="button-position-right"
               onClick={() => setCurrentIndex(2)}
+            ></button>
+            <button
+              className="button-position-bottom"
+              onClick={() => setCurrentIndex(4)}
+            ></button>
+            <button
+              className="button-position-left"
+              onClick={() => setCurrentIndex(0)}
             ></button>
           </div>
         );
@@ -67,7 +67,7 @@ function App() {
             ></button>
             <button
               className="button-position-right"
-              onClick={() => setCurrentIndex(1)}
+              onClick={() => setCurrentIndex(3)}
             ></button>
             <button
               className="button-position-bottom"
@@ -75,7 +75,7 @@ function App() {
             ></button>
             <button
               className="button-position-left"
-              onClick={() => setCurrentIndex(3)}
+              onClick={() => setCurrentIndex(1)}
             ></button>
           </div>
         );
@@ -84,19 +84,19 @@ function App() {
           <div className="buttons">
             <button
               className="button-position-top"
-              onClick={() => setCurrentIndex(4)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(2)}
-            ></button>
-            <button
-              className="button-position-bottom"
               onClick={() => setCurrentIndex(5)}
             ></button>
             <button
-              className="button-position-left"
+              className="button-position-right"
               onClick={() => setCurrentIndex(0)}
+            ></button>
+            <button
+              className="button-position-bottom"
+              onClick={() => setCurrentIndex(4)}
+            ></button>
+            <button
+              className="button-position-left"
+              onClick={() => setCurrentIndex(2)}
             ></button>
           </div>
         );
@@ -109,7 +109,7 @@ function App() {
             ></button>
             <button
               className="button-position-right"
-              onClick={() => setCurrentIndex(1)}
+              onClick={() => setCurrentIndex(3)}
             ></button>
             <button
               className="button-position-bottom"
@@ -117,7 +117,7 @@ function App() {
             ></button>
             <button
               className="button-position-left"
-              onClick={() => setCurrentIndex(3)}
+              onClick={() => setCurrentIndex(1)}
             ></button>
           </div>
         );
@@ -126,19 +126,19 @@ function App() {
           <div className="buttons">
             <button
               className="button-position-top"
-              onClick={() => setCurrentIndex(0)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(1)}
-            ></button>
-            <button
-              className="button-position-bottom"
               onClick={() => setCurrentIndex(2)}
             ></button>
             <button
-              className="button-position-left"
+              className="button-position-right"
               onClick={() => setCurrentIndex(3)}
+            ></button>
+            <button
+              className="button-position-bottom"
+              onClick={() => setCurrentIndex(0)}
+            ></button>
+            <button
+              className="button-position-left"
+              onClick={() => setCurrentIndex(1)}
             ></button>
           </div>
         );
