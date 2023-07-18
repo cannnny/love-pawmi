@@ -14,137 +14,31 @@ const imageArray = [
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const directionList = ["top", "right", "bottom", "left"];
+  const dataSet = [
+    [5, 1, 4, 3],
+    [5, 2, 4, 0],
+    [4, 3, 5, 1],
+    [5, 0, 4, 2],
+    [0, 3, 2, 1],
+    [2, 3, 0, 5],
+  ];
+
   const ImgChange = () => {
-    switch (currentIndex) {
-      case 0:
-        return (
-          <div className="buttons">
+    const buttons = dataSet[currentIndex];
+    return (
+      <div className="buttons">
+        {buttons.map((item, index) => {
+          return (
             <button
-              className="button-position-top"
-              onClick={() => setCurrentIndex(5)}
+              key={index}
+              className={`button-position-${directionList[index]}`}
+              onClick={() => setCurrentIndex(item)}
             ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(1)}
-            ></button>
-            <button
-              className="button-position-bottom"
-              onClick={() => setCurrentIndex(4)}
-            ></button>
-            <button
-              className="button-position-left"
-              onClick={() => setCurrentIndex(3)}
-            ></button>
-          </div>
-        );
-      case 1:
-        return (
-          <div className="buttons">
-            <button
-              className="button-position-top"
-              onClick={() => setCurrentIndex(5)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(2)}
-            ></button>
-            <button
-              className="button-position-bottom"
-              onClick={() => setCurrentIndex(4)}
-            ></button>
-            <button
-              className="button-position-left"
-              onClick={() => setCurrentIndex(0)}
-            ></button>
-          </div>
-        );
-      case 2:
-        return (
-          <div className="buttons">
-            <button
-              className="button-position-top"
-              onClick={() => setCurrentIndex(4)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(3)}
-            ></button>
-            <button
-              className="button-position-bottom"
-              onClick={() => setCurrentIndex(5)}
-            ></button>
-            <button
-              className="button-position-left"
-              onClick={() => setCurrentIndex(1)}
-            ></button>
-          </div>
-        );
-      case 3:
-        return (
-          <div className="buttons">
-            <button
-              className="button-position-top"
-              onClick={() => setCurrentIndex(5)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(0)}
-            ></button>
-            <button
-              className="button-position-bottom"
-              onClick={() => setCurrentIndex(4)}
-            ></button>
-            <button
-              className="button-position-left"
-              onClick={() => setCurrentIndex(2)}
-            ></button>
-          </div>
-        );
-      case 4:
-        return (
-          <div className="buttons">
-            <button
-              className="button-position-top"
-              onClick={() => setCurrentIndex(0)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(3)}
-            ></button>
-            <button
-              className="button-position-bottom"
-              onClick={() => setCurrentIndex(2)}
-            ></button>
-            <button
-              className="button-position-left"
-              onClick={() => setCurrentIndex(1)}
-            ></button>
-          </div>
-        );
-      case 5:
-        return (
-          <div className="buttons">
-            <button
-              className="button-position-top"
-              onClick={() => setCurrentIndex(2)}
-            ></button>
-            <button
-              className="button-position-right"
-              onClick={() => setCurrentIndex(3)}
-            ></button>
-            <button
-              className="button-position-bottom"
-              onClick={() => setCurrentIndex(0)}
-            ></button>
-            <button
-              className="button-position-left"
-              onClick={() => setCurrentIndex(1)}
-            ></button>
-          </div>
-        );
-      default:
-        break;
-    }
+          );
+        })}
+      </div>
+    );
   };
 
   return (
