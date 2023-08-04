@@ -8,9 +8,7 @@
   background-color: rgba(#000000, 0.1);
 
   background-blend-mode: overlay;
-  @media all and (min-width: 768px) and (max-width: 1024px) {
-    height: 100%;
-  }
+
   @media all and (min-width: 1025px) {
     background-image: url("../public/background-pc.png");
     background-size: cover;
@@ -37,7 +35,7 @@
 
 .pawmi-picture {
   position: absolute;
-  top: 20%;
+  top: 30%;
   width: 80%;
   @media all and (min-width: 1025px) {
     top: 15%;
@@ -81,20 +79,22 @@ button {
 
 .buttons {
   display: grid;
+  justify-content: center;
   align-items: center;
+  position: absolute;
   z-index: 10;
-  margin-top: 120px;
+  width: 90%;
+  height: 90%;
 
-  grid-template-columns: 15vw 70vw 15vw;
-  grid-template-rows: 20vw 70vw 20vw;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 20% 70% 20%;
   justify-items: center;
   @media all and (min-width: 1025px) {
     width: 100%;
-    height: 800px;
-    margin-top: 50px;
+    height: 80%;
 
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 3% 80% 3%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 40% 50% 40%;
   }
 
   .button-position-top {
