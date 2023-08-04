@@ -2,9 +2,8 @@
 
 .App {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../public/background-sp.png");
-  // background-size: cover;
   background-color: rgba(#000000, 0.1);
 
   background-blend-mode: overlay;
