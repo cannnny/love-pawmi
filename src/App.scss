@@ -2,13 +2,13 @@
 
 .App {
   height: 100vh;
-  background-image: url("../public/background-sp.png");
+  background-image: url("../public/background-sp.jpg");
   background-color: rgba(#000000, 0.1);
 
   background-blend-mode: overlay;
 
   @media all and (min-width: 1025px) {
-    background-image: url("../public/background-pc.png");
+    background-image: url("../public/background-pc.jpg");
     background-size: cover;
   }
 }
