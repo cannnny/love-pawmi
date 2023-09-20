@@ -4,12 +4,12 @@ import React, { useState } from "react";
 
 // 画像を配列に入れる
 const imageArray = [
-  "pawmi-front.png",
-  "pawmi-right.png",
-  "pawmi-back.png",
-  "pawmi-left.png",
-  "pawmi-above.png",
-  "pawmi-below.png",
+  "pawmi-front.webp",
+  "pawmi-right.webp",
+  "pawmi-back.webp",
+  "pawmi-left.webp",
+  "pawmi-above.webp",
+  "pawmi-below.webp",
 ];
 
 function App() {

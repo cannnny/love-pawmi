@@ -33,10 +33,10 @@
 
 .pawmi-picture {
   position: absolute;
-  top: 30%;
-  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
   @media all and (min-width: 1025px) {
-    top: 15%;
     width: auto;
     height: 70%;
   }
