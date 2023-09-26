@@ -15,6 +15,9 @@ const imageArray = [
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const directionList = ["top", "right", "bottom", "left"];
+  {
+    /* 画像の組み合わせ */
+  }
   const dataSet = [
     [5, 1, 4, 3],
     [5, 2, 4, 0],
@@ -25,7 +28,11 @@ function App() {
   ];
 
   const ImgChange = () => {
+    {
+      /* ボタンの組み合わせ */
+    }
     const buttons = dataSet[currentIndex];
+
     return (
       <div className="buttons">
         {buttons.map((item, index) => {
