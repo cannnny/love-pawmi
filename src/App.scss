@@ -1,25 +1,29 @@
+@use "./mq.scss" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 .App {
   height: 100vh;
-  background-image: url("../public/background-sp.jpg");
   background-color: rgba(#000000, 0.1);
-
+  background-image: url("../public/background-sp.jpg");
   background-blend-mode: overlay;
 
-  @media all and (min-width: 1025px) {
+  @include mq(lg) {
     background-image: url("../public/background-pc.jpg");
     background-size: cover;
   }
 }
+
 .logo {
   position: absolute;
   width: 15vh;
   padding: 10px;
-  @media all and (min-width: 768px) and (max-width: 1024px) {
+
+  @include mq(md) {
     width: 25%;
   }
-  @media all and (min-width: 1025px) {
+
+  @include mq(lg) {
     width: 15%;
     margin: 15px;
   }
@@ -34,9 +38,10 @@
 .pawmi-picture {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   width: 60%;
-  @media all and (min-width: 1025px) {
+  transform: translateY(-50%);
+
+  @include mq(lg) {
     width: auto;
     height: 70%;
   }
@@ -44,55 +49,60 @@
 
 button {
   display: inline-block;
-  border: none;
   background: transparent;
+  border: none;
+
   &::after {
     display: block;
     width: 0;
     height: 0;
-    border-width: 0 15px 15px 15px;
-    border-style: solid;
-    border-color: transparent transparent #ffffff transparent;
     content: "";
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 15px 15px;
     animation: arrowmove 1s ease-in-out infinite both;
+
     @keyframes arrowmove {
       0% {
         transform: translateY(5px);
       }
+
       50% {
         transform: translateY(-5px);
       }
+
       100% {
         transform: translateY(5px);
       }
     }
-    @media all and (min-width: 768px) and (max-width: 1024px) {
-      border-width: 0 30px 30px 30px;
+
+    @include mq(md) {
+      border-width: 0 30px 30px;
     }
-    @media all and (min-width: 1025px) {
-      border-width: 0 40px 40px 40px;
+
+    @include mq(lg) {
+      border-width: 0 40px 40px;
     }
   }
 }
 
 .buttons {
-  display: grid;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   z-index: 10;
+  display: grid;
+  grid-template-rows: 20% 70% 20%;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   width: 90%;
   height: 90%;
 
-  grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 20% 70% 20%;
-  justify-items: center;
-  @media all and (min-width: 1025px) {
+  @include mq(lg) {
+    grid-template-rows: 40% 50% 40%;
+    grid-template-columns: 30% 30% 30%;
     width: 100%;
     height: 80%;
-
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 40% 50% 40%;
   }
 
   .button-position-top {
@@ -101,38 +111,35 @@ button {
   }
 
   .button-position-right {
-    transform: rotate(90deg);
-
     grid-row: 2/3;
     grid-column: 3/4;
+    transform: rotate(90deg);
   }
 
   .button-position-bottom {
-    transform: rotate(180deg);
-
     grid-row: 3/4;
     grid-column: 2/3;
+    transform: rotate(180deg);
   }
 
   .button-position-left {
-    transform: rotate(-90deg);
-
     grid-row: 2/3;
     grid-column: 1/2;
+    transform: rotate(-90deg);
   }
 }
 
 footer {
-  display: flex;
-  justify-content: center;
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: center;
   width: 100%;
 
   & p {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
     font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
   }
 }
