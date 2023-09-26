@@ -9,5 +9,9 @@ module.exports = {
     "color-function-notation": "legacy",
     "selector-list-comma-newline-after": "never-multi-line",
     "selector-list-comma-space-after": "always-single-line",
+    "at-rule-no-unknown": [
+      true,
+      { ignoreAtRules: ["include", "mixin", "each"] },
+    ],
   },
 };
