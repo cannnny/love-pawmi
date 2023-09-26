@@ -1,0 +1,13 @@
+module.exports = {
+  plugins: ["stylelint-scss"],
+  extends: ["stylelint-config-standard", "stylelint-config-recess-order"],
+  ignoreFiles: ["**/node_modules/**"],
+  rules: {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "color-hex-length": null,
+    "color-function-notation": "legacy",
+    "selector-list-comma-newline-after": "never-multi-line",
+    "selector-list-comma-space-after": "always-single-line",
+  },
+};
